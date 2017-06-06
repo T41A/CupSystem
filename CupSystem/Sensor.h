@@ -5,7 +5,7 @@ class Sensor
 {
 public:
   Sensor(int Pin);
-  int GetSensorValue(void);
+  int GetSensorValue(void); // moet een bool functie zijn.
 private:
 int SensorPin;
 };

@@ -3,8 +3,8 @@ Sensor(int Pin):SensorPin(Pin)
 {
 
 }
-int Sensor::GetSensorValue(void)
+int Sensor::GetSensorValue(void) // moet een bool functie zijn.
 {
   bool value = digitalRead(SensorPin);
-  return value;
+  return value; // stuurt al wel een bool terug.
 }
