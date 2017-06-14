@@ -14,5 +14,4 @@ int Sensor::Read(void)
   {
     return 0;
   }
-
 }
