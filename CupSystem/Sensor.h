@@ -5,7 +5,7 @@ class Sensor
 {
 public:
   Sensor(int Pin);
-  int GetSensorValue(void);
+  int Read(void);
 private:
 int SensorPin;
 };

@@ -1,10 +1,18 @@
 #include "Sensor.h"
-Sensor(int Pin):SensorPin(Pin)
+Sensor::Sensor(int Pin):SensorPin(Pin)
 {
-
+pinMode(Pin,INPUT);
 }
-int Sensor::GetSensorValue(void)
+int Sensor::Read(void)
 {
-  bool value = digitalRead(SensorPin);
-  return value;
+  int value = analogRead(SensorPin);
+  if(value < 500)
+  {
+   return 1;
+  }
+  else
+  {
+    return 0;
+  }
+
 }
